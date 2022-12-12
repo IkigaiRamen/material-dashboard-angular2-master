@@ -1,0 +1,95 @@
+
+<!--div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card card-stats">
+    <a routerLink="AddEquipe">Add New equipe</a>
+  </div>
+  <div class="card" style="width: 18rem;" *ngFor="let Equipe of listeEquipe; let i=index">
+    {{i}}
+   {{Equipe.idEquipe}}
+    {{Equipe.idEquipe}}
+    <div class="card-body">
+      <h5 class="card-title">{{Equipe.nomEquipe}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <button class ="btn btn-success">  <a href="#" class="card-link">Afficher</a> </button>
+  <button class="btn btn-danger" (click)="deleteEquipe(Equipe.idEquipe)"> <a href="#" class="card-link">Supprimer</a></button>
+    </div>
+  </div>
+  </div>
+</div>
+
+</div>
+
+</div!-->
+
+
+
+
+
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <a routerLink="AddEquipe">Add New equipe</a>
+
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title ">Table des Equipes</h4>
+                        <p class="card-category"> Voici une listes des Equipe</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class=" text-primary">
+                                   
+                                    <th>
+                                        Nom Equipe
+                                    </th>
+                                    <th>
+                                        Niveau Equipe
+                                    </th>
+                                    <th>
+                                        Etudiants
+                                    </th>
+                                    <th>
+                                        Details Equipe
+                                    </th>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let Equipe of listeEquipe; let i=index">
+                                       
+                                        <td>
+                                            {{Equipe.nomEquipe}}
+                                        </td>
+                                        <td>
+                                            {{Equipe.Niveau}}
+                                        </td>
+                                        <td>
+                                            {{Equipe.Etudiants}}
+                                        </td>
+                                        <td class="text-primary">
+                                            {{Equipe.detailEquipe}}
+                                        </td>
+                                        <td>
+                                            <button class ="btn btn-success">  <a href="#" class="card-link">Modifier</a> </button>
+
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger" (click)="deleteEquipe(Equipe.idEquipe)"> <a href="#" class="card-link">Supprimer</a></button>
+
+                                        </td>
+                                    </tr>
+                
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  
