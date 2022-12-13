@@ -1,80 +1,11 @@
 {
-  "etudiants": [
+  "contrats": [
     {
-      "idEtudiant": 1,
-      "prenomE": "2020-09-15",
-      "nomE": "2020-09-14",
-      "option": "GAMIX",
-      "equipes": [],
-      "departement": {
-        "idDepart": 3,
-        "nomDepart": "aaa"
-      },
-      "contracts": []
-    },
-    {
-      "idEtudiant": 2,
-      "prenomE": "Georgebb",
-      "nomE": "Clooney",
-      "option": "GAMIX",
-      "Contracts": "",
-      "equipes": "",
-      "departement": ""
-    },
-    {
-      "idEtudiant": 3,
-      "prenomE": "Georgeccc",
-      "nomE": "Clooney",
-      "option": "GAMIX",
-      "Contracts": "",
-      "equipes": "",
-      "departement": ""
-    },
-    {
-      "idEtudiant": 4,
-      "prenomE": "Georgedd",
-      "nomE": "Clooney",
-      "option": "GAMIX",
-      "Contracts": "",
-      "equipes": "",
-      "departement": ""
-    },
-    {
-      "idEtudiant": 6,
-      "prenomE": "Georgettt",
-      "nomE": "Clooney",
-      "option": "GAMIX",
-      "Contracts": "",
-      "equipes": "",
-      "departement": ""
+      "id": 2,
+      "titre": "vente",
+      "dateD": "1999-06-30",
+      "dateF": "1999-06-30",
+      "description": "wiiwww"
     }
-],
-
-"equipe":[
-  {
-    "idEquipe": 1,
-    "nomEquipe": "innovators",
-    "niveau":"Senior",
-    "etudiants" :[],
-    "detailEquipe":{
-                    "salle": 11,
-                    "thematique": "theme"
-                    }
-  },
-  {
-    "idEquipe": 2,
-    "nomEquipe": "innovators",
-    "niveau":"Senior",
-    "etudiants" :[],
-    "detailEquipe":{
-                    "salle": 11,
-                    "thematique": "theme"
-                    }
-  }
-]
-
-
-
-
+  ]
 }
-  

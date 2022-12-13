@@ -1,1 +1,67 @@
-<p>liste-contrat works!</p>
+
+<div class="main-content">
+    <button type="button"  (click)="openAddForm()" >Add new Student</button>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div *ngIf="shouldOpen">
+            
+            <app-add-contrat (notification)="addContrat($event)"></app-add-contrat>
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title ">Table des Contrats</h4>
+                        <p class="card-category"> Voici une listes des Contrats</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class=" text-primary">
+                                   
+                                    <th>
+                                        Titre de Contrat
+                                    </th>
+                                    <th>
+                                        Date Début
+                                    </th>
+                                    <th>
+                                        Date Fin
+                                    </th>
+                                    <th>
+                                        affectation
+                                    </th>
+                                </thead>
+                                <tbody>
+                                  <tr *ngFor="let contrat of listContrats; let i=index">
+                                       
+                                        <td>
+                                            {{contrat.titre}}
+                                        </td>
+                                        <td>
+                                            {{contrat.dateD}}
+                                        </td>
+                                        <td>
+                                            {{contrat.dateF}}
+                                        </td>
+                                        <td *ngIf="contrat.etudiant==null">Pas d'affectation</td>
+
+                                        <td *ngIf="contrat.etudiant!=null">{{contrat.etudiant}}</td>
+                                        <td>
+                                            <button class ="btn btn-success">  <a href="#" class="card-link">Modifier</a> </button>
+
+                                        </td>
+                                        <td>
+                                            <button (click)="deleteContrat(contrat.id)"  class ="btn btn-danger">Supprimer</button>
+                                        </td>
+                                    </tr>                
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  

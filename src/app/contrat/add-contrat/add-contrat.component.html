@@ -1,1 +1,48 @@
-<p>add-contrat works!</p>
+<div class="main-content col-md-12">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title">Edit Profile</h4>
+                        <p class="card-category">Complete your profile</p>
+                    </div>
+                    <div class="card-body">
+                        <form #f="ngForm" (ngSubmit)="notifparent(contrat)">
+                            <div class="row">
+                               
+                                <div class="col-md-6">
+                                    <input class="form-control" type="text"  name="titre"  placeholder="Taper votre nom" [(ngModel)]="contrat.titre" required #titre="ngModel" required minlength="3">
+                                </div>
+                                <div class="col-md-6">
+                                      <input matInput placeholder="Specialité" >
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input class="form-control" type="date"  name="dateD"  placeholder="Taper votre nom" [(ngModel)]="contrat.dateD" required #dateD="ngModel" required minlength="3">
+                                </div>
+                                <div class="col-md-6">
+                                    <input class="form-control" type="date"  name="DateF"  placeholder="Taper votre nom" [(ngModel)]="contrat.dateF" required #dateF="ngModel" required minlength="3">
+                                </div>
+                            </div>
+                            <div class="row">
+                              <!--  <div class="col-md-6">
+                                    <input matInput placeholder="Etudiant" type="text">
+                                </div>-->
+                                <div class="col-md-6">
+                                    <input class="form-control" type="text"  name="description"  placeholder="Taper votre nom" [(ngModel)]="contrat.description" required #description="ngModel" required minlength="3">
+                                </div>
+                            </div>
+                          
+                         
+                            <button type="submit" class="mt-1 btn btn-primary" [disabled]="f.invalid">Submit</button>                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+         
+        </div>
+    </div>
+  </div>
+  

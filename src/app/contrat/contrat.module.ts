@@ -5,6 +5,7 @@ import { ContratRoutingModule } from './contrat-routing.module';
 import { ListeContratComponent } from './liste-contrat/liste-contrat.component';
 import { AddContratComponent } from './add-contrat/add-contrat.component';
 import { UpdateContratComponent } from './update-contrat/update-contrat.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { UpdateContratComponent } from './update-contrat/update-contrat.componen
   ],
   imports: [
     CommonModule,
-    ContratRoutingModule
+    ContratRoutingModule,
+    FormsModule,
   ]
 })
 export class ContratModule { }

@@ -11,7 +11,6 @@
     "e2e": "ng e2e",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && ng serve -o",
     "server": "json-server --watch server/database.json"
-
   },
   "engines": {
     "node": "6.11.1",
@@ -63,7 +62,7 @@
     "@types/jasminewd2": "~2.0.10",
     "@types/jquery": "3.5.6",
     "@types/node": "^17.0.21",
-    "codelyzer": "^0.0.28",
+    "codelyzer": "^6.0.2",
     "jasmine-core": "~4.4.0",
     "jasmine-spec-reporter": "~7.0.0",
     "karma": "~6.4.0",
