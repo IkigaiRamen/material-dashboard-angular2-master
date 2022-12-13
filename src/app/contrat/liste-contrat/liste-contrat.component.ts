@@ -23,7 +23,7 @@ openAddForm(){
   this.shouldOpen = true;
 }
 addContrat(contrat:Contrat){
-this.constratS.addContrat(contrat);
+this.constratS.addContrat(contrat).subscribe();
 }
 deleteContrat(id:number){
   this.constratS.delete(Number(id)).subscribe( () =>this.getAllContrat() );

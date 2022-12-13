@@ -14,10 +14,10 @@ export class AddContratComponent implements OnInit {
   ngOnInit(): void {
     this.contrat={
       titre:"",
-      id:0,
+      id:45,
       dateD:new Date(),
       dateF:new Date(),
-      description:""
+      description:"",
     }
   }
   notifparent(contrat:Contrat){
